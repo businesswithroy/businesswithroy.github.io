@@ -3,9 +3,16 @@
     <head>
         <title>Business with Roy</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    </head>
+            </head>
     
     <body>
+        <div class="intro">
+            <span>
+                <span class="spacer">spacer</span>
+                <h1>Business with Roy</h1>
+            </span>
+        </div>
+        
         <div class="document" id="document">
             <br>
             <h1>Business with Roy</h1>
@@ -24,6 +31,7 @@
             <p class="extraInfo">No guarantees. Offers may change or cancel at any time.</p>
             <br>
         </div>
+        
     </body>
     
     <style>
@@ -85,66 +93,23 @@
                 50% {background-color: #ffc;}
                 100% {background-color: #cff;}
             }
-        }
-        @media (min-width: 1200px) {
-            h1 {
-                font-size: 35pt;
-                font-family: zapfino;
-                font-weight: normal;
-                text-align: center;
-            }
-            h2 {
-                font-size: 35pt;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: left;
-                margin: 50px 100px;
-            }
-            h3 {
-                font-size: 25pt;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: left;
-                margin: 50px 100px;
-                color: #333;
-            }
-            a {
-                color: black;
-            }
-            p {
-                font-size: 14pt;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: justify;
-                margin: 20px 100px;
-                line-height: 20pt;
-            }
-            .extraInfo {
-                font-size: 8pt;
-                color: #888;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: left;
-                margin: 20px 100px;
-                line-height: 20pt;
-            }
-            body {
-                background: linear-gradient(#f43, #f80, #fc2);
-                margin: 100px;
-                -webkit-user-select: none;
-                user-select: none;
-                cursor: default;
-            }
-            .document {
-                width: 1000px;
-                background-color: #efffff;
-                margin: auto;
-                border-radius: 100px;
-                animation-name: color-change;
-                animation-duration: 20s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-                cursor: default;
+            
+            .intro {
+                position: fixed;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                background: linear-gradient(#f90, #ff0);
+                opacity: 0;
+                
+                animation-name: intro-animation;
+                animation-duration: 3s;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
             }
             
             @keyframes color-change {
@@ -152,7 +117,130 @@
                 50% {background-color: #ffc;}
                 100% {background-color: #cff;}
             }
+            
+            @keyframes intro-animation {
+                0% {
+                    opacity: 1;
+                }
+                
+                66% {
+                    opacity: 1;
+                }
+                
+                100% {
+                    opacity: 0;
+                }
+            }
+            
+            .spacer {
+                line-height: 20vh;
+                opacity: 0;
+            }
         }
+    @media (min-width: 1200px) {
+        h1 {
+            font-size: 35pt;
+            font-family: zapfino;
+            font-weight: normal;
+            text-align: center;
+        }
+        h2 {
+            font-size: 35pt;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            text-align: left;
+            margin: 50px 100px;
+        }
+        h3 {
+            font-size: 25pt;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            text-align: left;
+            margin: 50px 100px;
+            color: #333;
+        }
+        a {
+            color: black;
+        }
+        p {
+            font-size: 14pt;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            text-align: justify;
+            margin: 20px 100px;
+            line-height: 20pt;
+        }
+        .extraInfo {
+            font-size: 8pt;
+            color: #888;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            text-align: left;
+            margin: 20px 100px;
+            line-height: 20pt;
+        }
+        body {
+            background: linear-gradient(#f43, #f80, #fc2);
+            margin: 100px;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+        .document {
+            width: 1000px;
+            background-color: #efffff;
+            margin: auto;
+            border-radius: 100px;
+            animation-name: color-change;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            cursor: default;
+        }
+        
+        .intro {
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(#f90, #ff0);
+            opacity: 0;
+            
+            animation-name: intro-animation;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+        }
+        
+        @keyframes color-change {
+            0% {background-color: #cff;}
+            50% {background-color: #ffc;}
+            100% {background-color: #cff;}
+        }
+        
+        @keyframes intro-animation {
+            0% {
+                opacity: 1;
+            }
+            
+            66% {
+                opacity: 1;
+            }
+            
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .spacer {
+            line-height: 20vh;
+            opacity: 0;
+        }
+    }
     </style>
     
 </html>
