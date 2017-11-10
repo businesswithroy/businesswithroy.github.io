@@ -6,6 +6,12 @@
             </head>
     
     <body>
+        <div id="link">
+            <iframe class="frame" id="quote" src="https://docs.google.com/forms/d/e/1FAIpQLSdcu1HYXNv659h9R5P86EprdtQANkW4TNVMKx40bbqAf_0GdQ/viewform?usp=sf_link"></iframe>
+            <iframe class="frame" id="inquiry" src="https://docs.google.com/forms/d/e/1FAIpQLSfeLmuVA2Y4Tke7zksSHMEbkdjb6iH4Is9-mr7nC3c8PlrSRw/viewform?usp=sf_link"></iframe>
+            <a id="back" class="backLink" href="javascript:void(0)" onclick="back()"><img src="https://businesswithroy.github.io/Back.png" width="50px"></image></a>
+        </div>
+        
         <div class="intro">
             <span>
                 <span class="spacer">spacer</span>
@@ -25,8 +31,8 @@
             <h2>Pricing</h2>
             <p>I want to provide small businesses with cost-efficient ways to get beautiful apps created. That's why my service starts at just<p>
             <h1>$99!</h1>
-            <p>Apply for a consultation and get a free quote <a href="https://docs.google.com/forms/d/e/1FAIpQLSdcu1HYXNv659h9R5P86EprdtQANkW4TNVMKx40bbqAf_0GdQ/viewform?usp=sf_link">here</a>.</p>
-            <p>Have any questions? Ask them <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeLmuVA2Y4Tke7zksSHMEbkdjb6iH4Is9-mr7nC3c8PlrSRw/viewform?usp=sf_link">here</a>.</p>
+            <p>Apply for a consultation and get a free quote <a href="javascript:void(0)" onclick="showQuote()">here</a>.</p>
+            <p>Have any questions? Ask them <a href="javascript:void(0)" onclick="showInquiry()">here</a>.</p>
             <p class="extraInfo">Quotes are estimated and may not reflect the actual ammount that the service will cost.</p>
             <p class="extraInfo">No guarantees. Offers may change or cancel at any time.</p>
             <br>
@@ -96,7 +102,7 @@
             
             .intro {
                 position: fixed;
-                top: 0px;
+                top: -100vh;
                 bottom: 0px;
                 left: 0px;
                 right: 0px;
@@ -121,14 +127,17 @@
             @keyframes intro-animation {
                 0% {
                     opacity: 1;
+                    top: 0px;
                 }
                 
                 66% {
                     opacity: 1;
+                    top: 0px;
                 }
                 
                 100% {
-                    opacity: 0;
+                    opacity: 1;
+                    top: -100vh;
                 }
             }
             
@@ -200,7 +209,7 @@
         
         .intro {
             position: fixed;
-            top: 0px;
+            top: -100vh;
             bottom: 0px;
             left: 0px;
             right: 0px;
@@ -216,6 +225,32 @@
             animation-iteration-count: 1;
         }
         
+        .frame {
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: 0;
+            width: 100vw;
+            height: 0vh;
+            border: none;
+            
+            transition: 1s;
+            -webkit-transition: 1s;
+        }
+        
+        .backLink {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 50px;
+            left: 50px;
+            transition: 1s;
+            
+            opacity: 0;
+        }
+        
         @keyframes color-change {
             0% {background-color: #cff;}
             50% {background-color: #ffc;}
@@ -225,14 +260,17 @@
         @keyframes intro-animation {
             0% {
                 opacity: 1;
+                top: 0px;
             }
             
             66% {
                 opacity: 1;
+                top: 0px;
             }
             
             100% {
-                opacity: 0;
+                opacity: 1;
+                top: -100vh;
             }
         }
         
@@ -242,6 +280,24 @@
         }
     }
     </style>
+    
+    <script>
+        function showQuote() {
+            document.getElementById("quote").style.height = "100vh"
+            document.getElementById("back").style.opacity = "1"
+        }
+    
+        function showInquiry() {
+            document.getElementById("inquiry").style.height = "100vh"
+            document.getElementById("back").style.opacity = "1"
+        }
+    
+        function back() {
+            document.getElementById("quote").style.height = "0px"
+            document.getElementById("inquiry").style.height = "0px"
+            document.getElementById("back").style.opacity = "0"
+        }
+    </script>
     
 </html>
 
