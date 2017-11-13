@@ -6,6 +6,7 @@
             </head>
     
     <body>
+        
         <div id="link">
             <iframe class="frame" id="quote" src="https://docs.google.com/forms/d/e/1FAIpQLSdcu1HYXNv659h9R5P86EprdtQANkW4TNVMKx40bbqAf_0GdQ/viewform?usp=sf_link"></iframe>
             <iframe class="frame" id="inquiry" src="https://docs.google.com/forms/d/e/1FAIpQLSfeLmuVA2Y4Tke7zksSHMEbkdjb6iH4Is9-mr7nC3c8PlrSRw/viewform?usp=sf_link"></iframe>
@@ -24,6 +25,11 @@
             <h1>Business with Roy</h1>
             <h2>Interested in an app for your business?</h2>
             <p>Hello. I'm Roy. Ever since I was young, I've been interested in computer programming. Today, I'm in seventh grade, and I have seven apps published on the App Store.<br><br>Interested in an app for your business? You can get one built quickly and relibaly, for almost all of your business needs. Take a look at some of the apps I've already created, see pricing, and schedule a consultation below.</p>
+            <h2>Overview Video</h2>
+            <video controls>
+                <source src="https://businesswithroy.github.io/bwrAd1.mp4" type="video/mp4">
+                <p>Video not available.</p>
+            </video>
             <h2>Examples</h2>
             <p>Take a look at some of the apps I've already created. The same careful quality, beautiul design, wonderful functionality, and ease of use will be applied to the apps that I create for you.</p>
             <p><a href="https://itunes.apple.com/us/app/travel-checklist-3/id1205154670?ls=1&mt=8">Travel Checklist</a> makes packing for a vacation easier. It helps you create your list and guides you through the process of packing to make your vacation a little less stressful.</p>
@@ -43,39 +49,6 @@
     
     <style>
         @media (max-width: 1199px) {
-            h1 {
-                font-size: 35pt;
-                font-family: zapfino;
-                font-weight: normal;
-                text-align: center;
-            }
-            h2 {
-                font-size: 35pt;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: left;
-                margin: 50px 100px;
-            }
-            a {
-                color: black;
-            }
-            p {
-                font-size: 14pt;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: justify;
-                margin: 20px 100px;
-                line-height: 20pt;
-            }
-            .extraInfo {
-                font-size: 8pt;
-                color: #888;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 300;
-                text-align: left;
-                margin: 20px 100px;
-                line-height: 20pt;
-            }
             body {
                 background: linear-gradient(#f43, #f80, #fc2);
                 margin: 10px;
@@ -94,127 +67,8 @@
                 animation-timing-function: linear;
                 cursor: default;
             }
-            
-            @keyframes color-change {
-                0% {background-color: #cff;}
-                50% {background-color: #ffc;}
-                100% {background-color: #cff;}
-            }
-            
-            .intro {
-                position: fixed;
-                top: -100vh;
-                bottom: 0px;
-                left: 0px;
-                right: 0px;
-                margin: 0;
-                width: 100vw;
-                height: 100vh;
-                background: linear-gradient(#f90, #ff0);
-                opacity: 0;
-                
-                animation-name: intro-animation;
-                animation-duration: 3s;
-                animation-delay: 0s;
-                animation-iteration-count: 1;
-            }
-            
-            .frame {
-                position: fixed;
-                top: 0px;
-                bottom: 0px;
-                left: 0px;
-                right: 0px;
-                margin: 0;
-                width: 100vw;
-                height: 0vh;
-                border: none;
-                
-                transition: 1s;
-                -webkit-transition: 1s;
-            }
-            
-            .backLink {
-                width: 50px;
-                height: 50px;
-                position: fixed;
-                top: 50px;
-                left: 50px;
-                transition: 1s;
-                
-                opacity: 0;
-            }
-            
-            @keyframes color-change {
-                0% {background-color: #cff;}
-                50% {background-color: #ffc;}
-                100% {background-color: #cff;}
-            }
-            
-            @keyframes intro-animation {
-                0% {
-                    opacity: 1;
-                    top: 0px;
-                }
-                
-                66% {
-                    opacity: 1;
-                    top: 0px;
-                }
-                
-                100% {
-                    opacity: 1;
-                    top: -100vh;
-                }
-            }
-            
-            .spacer {
-                line-height: 20vh;
-                opacity: 0;
-            }
         }
     @media (min-width: 1200px) {
-        h1 {
-            font-size: 35pt;
-            font-family: zapfino;
-            font-weight: normal;
-            text-align: center;
-        }
-        h2 {
-            font-size: 35pt;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            text-align: left;
-            margin: 50px 100px;
-        }
-        h3 {
-            font-size: 25pt;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            text-align: left;
-            margin: 50px 100px;
-            color: #333;
-        }
-        a {
-            color: black;
-        }
-        p {
-            font-size: 14pt;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            text-align: justify;
-            margin: 20px 100px;
-            line-height: 20pt;
-        }
-        .extraInfo {
-            font-size: 8pt;
-            color: #888;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            text-align: left;
-            margin: 20px 100px;
-            line-height: 20pt;
-        }
         body {
             background: linear-gradient(#f43, #f80, #fc2);
             margin: 100px;
@@ -233,78 +87,135 @@
             animation-timing-function: linear;
             cursor: default;
         }
+    }
+    
+    .intro {
+        position: fixed;
+        top: -100vh;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(#f90, #ff0);
+        opacity: 0;
         
-        .intro {
-            position: fixed;
-            top: -100vh;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            margin: 0;
-            width: 100vw;
-            height: 100vh;
-            background: linear-gradient(#f90, #ff0);
-            opacity: 0;
-            
-            animation-name: intro-animation;
-            animation-duration: 3s;
-            animation-delay: 0s;
-            animation-iteration-count: 1;
-        }
+        animation-name: intro-animation;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+    
+    .frame {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0;
+        width: 100vw;
+        height: 0vh;
+        border: none;
         
-        .frame {
-            position: fixed;
+        transition: 1s;
+        -webkit-transition: 1s;
+    }
+    
+    h1 {
+        font-size: 35pt;
+        font-family: zapfino;
+        font-weight: normal;
+        text-align: center;
+    }
+    h2 {
+        font-size: 35pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: left;
+        margin: 50px 100px;
+    }
+    h3 {
+        font-size: 25pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: left;
+        margin: 50px 100px;
+        color: #333;
+    }
+    a {
+        color: black;
+    }
+    p {
+        font-size: 14pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        margin: 20px 100px;
+        line-height: 20pt;
+    }
+    .extraInfo {
+        font-size: 8pt;
+        color: #888;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: left;
+        margin: 20px 100px;
+        line-height: 20pt;
+    }
+    
+    .backLink {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        transition: 1s;
+        
+        opacity: 0;
+    }
+    
+    @keyframes color-change {
+        0% {background-color: #cff;}
+        50% {background-color: #ffc;}
+        100% {background-color: #cff;}
+    }
+    
+    @keyframes intro-animation {
+        0% {
+            opacity: 1;
             top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            margin: 0;
-            width: 100vw;
-            height: 0vh;
-            border: none;
-            
-            transition: 1s;
-            -webkit-transition: 1s;
         }
         
-        .backLink {
-            width: 50px;
-            height: 50px;
-            position: fixed;
-            top: 50px;
-            left: 50px;
-            transition: 1s;
-            
-            opacity: 0;
+        66% {
+            opacity: 1;
+            top: 0px;
         }
         
-        @keyframes color-change {
-            0% {background-color: #cff;}
-            50% {background-color: #ffc;}
-            100% {background-color: #cff;}
+        100% {
+            opacity: 1;
+            top: -100vh;
         }
+    }
+    
+    .spacer {
+        line-height: 20vh;
+        opacity: 0;
+    }
+    
+    video {
+        width: 100%;
+    }
+    
+    .introVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 0vh;
+        opacity: 0;
         
-        @keyframes intro-animation {
-            0% {
-                opacity: 1;
-                top: 0px;
-            }
-            
-            66% {
-                opacity: 1;
-                top: 0px;
-            }
-            
-            100% {
-                opacity: 1;
-                top: -100vh;
-            }
-        }
-        
-        .spacer {
-            line-height: 20vh;
-            opacity: 0;
-        }
+        transition: height 1s opacity 0s;
     }
     </style>
     
