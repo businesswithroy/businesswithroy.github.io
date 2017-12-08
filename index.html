@@ -11,7 +11,264 @@
             <iframe class="frame" id="quote" src="https://docs.google.com/forms/d/e/1FAIpQLSdcu1HYXNv659h9R5P86EprdtQANkW4TNVMKx40bbqAf_0GdQ/viewform?usp=sf_link"></iframe>
             <iframe class="frame" id="inquiry" src="https://docs.google.com/forms/d/e/1FAIpQLSfeLmuVA2Y4Tke7zksSHMEbkdjb6iH4Is9-mr7nC3c8PlrSRw/viewform?usp=sf_link"></iframe>
             <a id="back" class="backLink" href="javascript:void(0)" onclick="back()"><img src="https://businesswithroy.github.io/Back.png" width="50px"></image></a>
+        </div><!Doctype HTML>
+<html>
+    <head>
+        <title>Business with Roy</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            </head>
+    
+    <body>
+        
+        <div id="link">
+            <iframe class="frame" id="quote" src="https://docs.google.com/forms/d/e/1FAIpQLSdcu1HYXNv659h9R5P86EprdtQANkW4TNVMKx40bbqAf_0GdQ/viewform?usp=sf_link"></iframe>
+            <iframe class="frame" id="inquiry" src="https://docs.google.com/forms/d/e/1FAIpQLSfeLmuVA2Y4Tke7zksSHMEbkdjb6iH4Is9-mr7nC3c8PlrSRw/viewform?usp=sf_link"></iframe>
+            <a id="back" class="backLink" href="javascript:void(0)" onclick="back()"><img src="https://businesswithroy.github.io/Back.png" width="50px"></image></a>
         </div>
+        
+        <div class="intro">
+            <span>
+                <span class="spacer">spacer</span>
+                <h1>Business with Roy</h1>
+            </span>
+        </div>
+        
+        <div class="document" id="document">
+            <br>
+            <h1>Business with Roy</h1>
+            <h2>Interested in an app for your business?</h2>
+            <p>Hello. I'm Roy. I'm a published app developer with seven apps on the iOS App Store.<br><br>Interested in an app for your business? You can have one built quickly and relibaly, for almost all of your business needs. Take a look at some of the apps I've already created, see pricing, and schedule a consultation below.</p>
+            <h2>Overview Video</h2>
+            <video controls>
+                <source src="https://businesswithroy.github.io/bwrAd1.mp4" type="video/mp4">
+                <p>Video not available.</p>
+            </video>
+            <h2>Examples</h2>
+            <p>Take a look at some of the apps I've already created. The same careful quality, beautiul design, wonderful functionality, and ease of use will be applied to the apps that I create for you.</p>
+            <p><a href="https://itunes.apple.com/us/app/travel-checklist-3/id1205154670?ls=1&mt=8">Travel Checklist</a> makes packing for a vacation easier. It helps you create your list and guides you through the process of packing to make your vacation a little less stressful.</p>
+            <p><a href="https://itunes.apple.com/us/app/meditate-relax-your-mind/id1263708220?ls=1&mt=8">Meditate</a> guides you through relaxing breathing exercises to reduce stress and clear your mind.</p>
+            <h2>Pricing</h2>
+            <p>I want to create beautiful and functional apps for the everyday needs of small businesses in a cost-efficient way. That's why my service starts at just<p>
+            <h1>$99!</h1>
+            <p>Apply for a consultation and get a free quote <a href="javascript:void(0)" onclick="showQuote()">here</a>.</p>
+            <p>Have any questions? Ask them <a href="javascript:void(0)" onclick="showInquiry()">here</a>.</p>
+            <p><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://businesswithroy.github.io" data-hashtags="businesswithroy" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+            <p class="extraInfo">Quotes are estimated and may not reflect the actual ammount that the service will cost.</p>
+            <br>
+            <p class="extraInfo">Offers may change or cancel at any time.</p>
+            <br>
+            <p class="extraInfo">By signing up for Business with Roy or scheduling a consultation, you release Roy Sianez from any liabilities or damages that you may incur as a direct or indirect result of this service and agree to indemnify Roy for any liabilities or damages incurred by any other legal entity as a direct or indirect result of your usage of this service.</p>
+            <br>
+        </div>
+        
+    </body>
+    
+    <style>
+        @media (max-width: 1199px) {
+            body {
+                background: linear-gradient(#f43, #f80, #fc2);
+                margin: 10px;
+                -webkit-user-select: none;
+                user-select: none;
+                cursor: default;
+            }
+            .document {
+                width: 100%;
+                background-color: #efffff;
+                margin: auto;
+                border-radius: 10px;
+                animation-name: color-change;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                cursor: default;
+            }
+        }
+    @media (min-width: 1200px) {
+        body {
+            background: linear-gradient(#f43, #f80, #fc2);
+            margin: 100px;
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+        .document {
+            width: 1000px;
+            background-color: #efffff;
+            margin: auto;
+            border-radius: 100px;
+            animation-name: color-change;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            cursor: default;
+        }
+    }
+    
+    .intro {
+        position: fixed;
+        top: -100vh;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(#f90, #ff0);
+        opacity: 0;
+        
+        animation-name: intro-animation;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+    }
+    
+    .frame {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0;
+        width: 100vw;
+        height: 0vh;
+        border: none;
+        
+        transition: 1s;
+        -webkit-transition: 1s;
+    }
+    
+    h1 {
+        font-size: 35pt;
+        font-family: zapfino;
+        font-weight: normal;
+        text-align: center;
+    }
+    h2 {
+        font-size: 35pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: left;
+        margin: 50px 100px;
+    }
+    h3 {
+        font-size: 25pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: left;
+        margin: 50px 100px;
+        color: #333;
+    }
+    a {
+        color: black;
+    }
+    p {
+        font-size: 14pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+        margin: 20px 100px;
+        line-height: 20pt;
+    }
+    @media (max-width: 414px) {
+        p {
+            font-size: 17pt;
+        }
+    }
+    .extraInfo {
+        font-size: 8pt;
+        color: #888;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-align: left;
+        margin: 0px 100px;
+        line-height: 15pt;
+    }
+    
+    .backLink {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50px;
+        left: 50px;
+        transition: 1s;
+        
+        opacity: 0;
+    }
+    
+    @keyframes color-change {
+        0% {background-color: #cff;}
+        50% {background-color: #ffc;}
+        100% {background-color: #cff;}
+    }
+    
+    @keyframes intro-animation {
+        0% {
+            opacity: 1;
+            top: 0px;
+        }
+        
+        66% {
+            opacity: 1;
+            top: 0px;
+        }
+        
+        100% {
+            opacity: 1;
+            top: -100vh;
+        }
+    }
+    
+    .spacer {
+        line-height: 20vh;
+        opacity: 0;
+    }
+    
+    video {
+        width: 100%;
+    }
+    
+    .introVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 0vh;
+        opacity: 0;
+        
+        transition: height 1s opacity 0s;
+    }
+    </style>
+    
+    <script>
+        function showQuote() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                window.open("https://docs.google.com/forms/d/e/1FAIpQLSdcu1HYXNv659h9R5P86EprdtQANkW4TNVMKx40bbqAf_0GdQ/viewform?usp=sf_link")
+            } else {
+                document.getElementById("quote").style.height = "100vh"
+                document.getElementById("back").style.opacity = "1"
+            }
+        }
+    
+        function showInquiry() {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                window.open("https://docs.google.com/forms/d/e/1FAIpQLSfeLmuVA2Y4Tke7zksSHMEbkdjb6iH4Is9-mr7nC3c8PlrSRw/viewform?usp=sf_link")
+            } else {
+                document.getElementById("inquiry").style.height = "100vh"
+                document.getElementById("back").style.opacity = "1"
+            }
+        }
+    
+        function back() {
+            document.getElementById("quote").style.height = "0px"
+            document.getElementById("inquiry").style.height = "0px"
+            document.getElementById("back").style.opacity = "0"
+        }
+    </script>
+    
+</html>
+
+
         
         <div class="intro">
             <span>
